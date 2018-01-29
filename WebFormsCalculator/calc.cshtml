@@ -41,13 +41,12 @@
 @{
 	if(IsPost) {
 		if (Convert.ToInt32(Request["value-a"]) == null || Convert.ToInt32(Request["value-b"]) == null){
-		 int a = 1;
-		 int b = 1;
-		 <p>Either one or two fields were blank, so values were set to 1</p>
-		} else {
-			int a = Convert.ToInt32(Request["value-a"]);
-			int b = Convert.ToInt32(Request["value-b"]);
-		}
+			Convert.ToInt32(Request["value-a"]) = 1;
+			Convert.ToInt32(Request["value-b"]) = 1;
+		} else {}
+		
+		int a = Convert.ToInt32(Request["value-a"]);
+		int b = Convert.ToInt32(Request["value-b"]);
 		string calcType = Request["calc"];
 		
 		if(calcType == "add") {
