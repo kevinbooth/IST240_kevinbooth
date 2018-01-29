@@ -40,8 +40,14 @@
 
 @{
 	if(IsPost) {
-		int a = Convert.ToInt32(Request["value-a"]);
-		int b = Convert.ToInt32(Request["value-b"]);
+		if (Convert.ToInt32(Request["value-a"]) == null || Convert.ToInt32(Request["value-b"]) == null){
+		 int a = 0;
+		 int b = 0;
+		 <p>Either one or two fields were blank, so values were set to 0</p>
+		} else {
+			int a = Convert.ToInt32(Request["value-a"]);
+			int b = Convert.ToInt32(Request["value-b"]);
+		}
 		string calcType = Request["calc"];
 		
 		if(calcType == "add") {
