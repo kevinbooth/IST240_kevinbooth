@@ -1,24 +1,3 @@
-@{
-	if(IsPost) {
-		int a = Convert.ToInt32(Request["value-a"]);
-		int b = Convert.ToInt32(Request["value-b"]);
-		string calcType = Request["calc"];
-		
-		if(calcType == "add") {
-			int add = @a + @b;
-			<p>Addition of @a and @b = @add</p>
-		} else if (calcType == "subtract") {
-			int subtract = @a - @b;
-			<p>Subtraction of @a and @b = @subtract</p>
-		} else if (calcType == "multiply") {
-			int multiply = @a * @b;
-			<p>Multiplication of @a and @b = @multiply</p>
-		} else if (calcType == "divide") {
-			int divide = @a / @b;
-			<p>Division of @a and @b = @divide</p>
-		}
-	}
-}
 <!DOCTYPE html>
 <html>
 	<head>
@@ -57,3 +36,25 @@
 		</form>
 	</body>
 </html>
+
+@{
+	if(IsPost) {
+		int a = Convert.ToInt32(Request["value-a"]);
+		int b = Convert.ToInt32(Request["value-b"]);
+		string calcType = Request["calc"];
+		
+		if(calcType == "add") {
+			int add = @a + @b;
+			<p>Addition of @a and @b = @add</p>
+		} else if (calcType == "subtract") {
+			int subtract = @a - @b;
+			<p>Subtraction of @a and @b = @subtract</p>
+		} else if (calcType == "multiply") {
+			int multiply = @a * @b;
+			<p>Multiplication of @a and @b = @multiply</p>
+		} else if (calcType == "divide") {
+			int divide = @a / @b;
+			<p>Division of @a and @b = @divide</p>
+		}
+	} else {}
+}
