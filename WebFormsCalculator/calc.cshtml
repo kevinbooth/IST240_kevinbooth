@@ -40,7 +40,7 @@
 
 @{
 	if(IsPost) {
-		if (Request["value-a"] != null && Request["value-b"] != null){
+		
 			int a = Convert.ToInt32(Request["value-a"]);
 			int b = Convert.ToInt32(Request["value-b"]);
 			string calcType = Request["calc"];
@@ -58,6 +58,6 @@
 				int divide = @a / @b;
 				<p>Division of @a and @b = @divide</p>
 			}
-		} else { <p>Please make sure you filled out each field!</p> }
+		
 	} else {}
 }
