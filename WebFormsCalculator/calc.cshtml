@@ -3,7 +3,11 @@
 		int a = Convert.ToInt32(Request["value-a"]);
 		int b = Convert.ToInt32(Request["value-b"]);
 		string calcType = Request["calc"];
-		<p> @a @b @calcType</p>
+		
+		if(calcType = "add") {
+			int add = a + b;
+			<p>Addition of @a and @b: @add;
+		}
 	}
 }
 <!DOCTYPE html>
