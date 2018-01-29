@@ -40,7 +40,7 @@
 
 @{
 	if(IsPost) {
-		if (Convert.ToInt32(Request["value-a"]) != null || Convert.ToInt32(Request["value-b"]) != null){
+		if (Request["value-a"] != null || Request["value-b"] != null){
 		
 		int a = Convert.ToInt32(Request["value-a"]);
 		int b = Convert.ToInt32(Request["value-b"]);
