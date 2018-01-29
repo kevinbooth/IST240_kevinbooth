@@ -1,5 +1,10 @@
 @{
-
+	if(IsPost) {
+		int a = Convert.ToInt32(Request["value-a"]);
+		int b = Convert.ToInt32(Request["value-b"]);
+		string calcType = Request["calc"];
+		<p> @a @b @calcType</p>
+	}
 }
 <!DOCTYPE html>
 <html>
@@ -7,7 +12,7 @@
 		<title>WebForms Calculator</title>
 	</head>
 	<body>
-		<form method="get" action="">
+		<form method="post" action="">
 			<label for='value-a'>Value A</label>
 			<input id='value-a' name='value-a' type='text'/>	
 			<label for='value-b'>Value B</label>
