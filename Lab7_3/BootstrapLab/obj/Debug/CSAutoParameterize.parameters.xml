@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="BookContext-Web.config Connection String" description="BookContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=18s240kdb.database.windows.net;            Initial Catalog=webDev;            Persist Security Info=True;            User ID=kbooth;            Password=NHTI-Booth" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\_Repos\\IST240_kevinbooth\\KnockoutLab\\BootstrapLab\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BookContext']/@connectionString" />
+  </parameter>
+</parameters>
