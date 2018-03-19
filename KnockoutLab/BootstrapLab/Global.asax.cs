@@ -1,5 +1,8 @@
-﻿using System;
+﻿using BootstrapIntroduction.DAL;
+using BootstrapLab.DAL;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -16,6 +19,9 @@ namespace BootstrapLab
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            var bookContext = new BookContext();
+            Database.SetInitializer(new BookInitializer());
+            bookContext.Database.Initialize(true);
         }
     }
 }
