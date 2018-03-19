@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="c:\users\nhti\documents\visual studio 2017\Projects\BootstrapLab\BootstrapLab\obj\Debug\Package\PackageTmp" />
-  <setAcl path="c:\users\nhti\documents\visual studio 2017\Projects\BootstrapLab\BootstrapLab\obj\Debug\Package\PackageTmp" setAclResourceType="Directory" />
-  <setAcl path="c:\users\nhti\documents\visual studio 2017\Projects\BootstrapLab\BootstrapLab\obj\Debug\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+  <IisApp path="C:\_Repos\IST240_kevinbooth\KnockoutLab\BootstrapLab\obj\Debug\Package\PackageTmp" />
+  <setAcl path="C:\_Repos\IST240_kevinbooth\KnockoutLab\BootstrapLab\obj\Debug\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\_Repos\IST240_kevinbooth\KnockoutLab\BootstrapLab\obj\Debug\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
 </sitemanifest>

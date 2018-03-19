@@ -136,3 +136,4 @@ C:\_Repos\IST240_kevinbooth\KnockoutLab\BootstrapLab\bin\Microsoft.AI.Dependency
 C:\_Repos\IST240_kevinbooth\KnockoutLab\BootstrapLab\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\_Repos\IST240_kevinbooth\KnockoutLab\BootstrapLab\bin\Microsoft.AI.WindowsServer.xml
 C:\_Repos\IST240_kevinbooth\KnockoutLab\BootstrapLab\bin\Microsoft.AI.Web.xml
+C:\_Repos\IST240_kevinbooth\KnockoutLab\BootstrapLab\bin\Json.NET.Web.dll
